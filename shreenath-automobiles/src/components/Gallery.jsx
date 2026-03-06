@@ -1,0 +1,18 @@
+export default function Gallery() {
+  return (
+    <section className="py-20 bg-black">
+      <div className="max-w-7xl mx-auto px-6">
+        <h2 className="text-3xl font-bold text-white text-center mb-12">
+          Our Workshop
+        </h2>
+
+        <div className="grid md:grid-cols-2 gap-6">
+          <img src="/images/logo.png" className="rounded-xl" />
+          <img src="/images/hero-car.png" className="rounded-xl" />
+          <img src="/images/service-1.jpg" className="rounded-xl" />
+          <img src="/images/service-2.jpg" className="rounded-xl" />
+        </div>
+      </div>
+    </section>
+  );
+}

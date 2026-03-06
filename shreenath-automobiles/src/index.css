@@ -1,0 +1,116 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ===============================
+   GENERAL ANIMATIONS
+================================ */
+
+/* Slide down (Navbar mobile menu) */
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-slideDown {
+  animation: slideDown 0.25s ease-out;
+}
+
+/* Fade In (Cards, Modals, Login Box) */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+/* ===============================
+   INPUT FIXES
+================================ */
+
+/* Make date picker visible in dark mode */
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+  cursor: pointer;
+}
+
+/* ===============================
+   MOTION EFFECTS
+================================ */
+
+/* Motion streaks / speed lines */
+@keyframes slide {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
+.animate-slide {
+  animation: slide 3s linear infinite;
+}
+
+/* ===============================
+   🚗 CAR BACKGROUND ANIMATION
+================================ */
+
+/* Car driving across screen */
+@keyframes carDrive {
+  0% {
+    transform: translateX(-120%) scale(1.5);
+  }
+  100% {
+    transform: translateX(120%) scale(1.5);
+  }
+}
+
+.animate-carDrive {
+  animation: carDrive 25s linear infinite;
+}
+
+/* Car image styling */
+.car-bg {
+  position: absolute;
+  bottom: 5%;
+  width: 80vw;           /* Responsive size */
+  max-width: 1200px;     /* Desktop limit */
+  opacity: 0.9;
+  pointer-events: none;
+  animation: carDrive 25s linear infinite;
+}
+
+/* ===============================
+   OPTIONAL ENHANCEMENTS
+================================ */
+
+/* Headlight glow (optional) */
+.car-glow {
+  filter: drop-shadow(0 0 25px rgba(255, 255, 255, 0.6));
+}
+
+/* Background dark overlay */
+.bg-overlay {
+  background: radial-gradient(
+    circle at center,
+    rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0.85)
+  );
+}
