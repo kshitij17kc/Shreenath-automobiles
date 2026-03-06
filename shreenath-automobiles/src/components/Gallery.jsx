@@ -7,12 +7,13 @@ export default function Gallery() {
         </h2>
 
         <div className="grid md:grid-cols-2 gap-6">
-          <img src="/images/logo.png" className="rounded-xl" />
-          <img src="/images/hero-car.png" className="rounded-xl" />
-          <img src="/images/service-1.jpg" className="rounded-xl" />
-          <img src="/images/service-2.jpg" className="rounded-xl" />
+          <img src="/images/logo.png" alt="Workshop logo" className="rounded-xl" />
+          <img src="/images/hero-car.png" alt="Car service" className="rounded-xl" />
+          <img src="/images/service-1.jpg" alt="Vehicle repair service" className="rounded-xl" />
+          <img src="/images/service-2.jpg" alt="Automobile maintenance" className="rounded-xl" />
         </div>
       </div>
     </section>
   );
 }
+
