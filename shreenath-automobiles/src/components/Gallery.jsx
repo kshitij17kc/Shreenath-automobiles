@@ -8,9 +8,9 @@ export default function Gallery() {
 
         <div className="grid md:grid-cols-2 gap-6">
           <img src="/images/logo.png" alt="Workshop logo" className="rounded-xl" />
-          <img src="/images/hero-car.png" alt="Hero car image" className="rounded-xl" />
+          <img src="/images/hero-car.png" alt="Luxury car" className="rounded-xl" />
           <img src="/images/service-1.jpg" alt="Car repair service" className="rounded-xl" />
-          <img src="/images/service-2.jpg" alt="Automobile maintenance" className="rounded-xl" />
+          <img src="/images/service-2.jpg" alt="Vehicle maintenance" className="rounded-xl" />
         </div>
       </div>
     </section>
