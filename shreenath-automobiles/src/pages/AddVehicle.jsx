@@ -17,7 +17,7 @@ export default function AddVehicle() {
     }
 
     try {
-      const res = await fetch("https://shreenath-backend.onrender.com/api/users/login", {
+      const res = await fetch("https://shreenath-automobiles.onrender.com/api/users/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
