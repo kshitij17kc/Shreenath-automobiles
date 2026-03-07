@@ -17,7 +17,7 @@ export default function AddVehicle() {
     }
 
     try {
-      const res = await fetch("http://localhost:5000/api/vehicles/add", {
+      const res = await fetch("https://shreenath-backend.onrender.com/api/users/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
